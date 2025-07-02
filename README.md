@@ -61,6 +61,19 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
 - Após **balanceamento com resample supervisionado**:
   - 931 saudáveis
   - 931 doentes
+ 
+  ---
+
+## Implementação de plugin no ImageJ
+
+O sistema final foi encapsulado em um **plugin Java para ImageJ** que faz os mesmos cálculos de atributos:
+
+- O usuário abre uma imagem no ImageJ
+- O plugin extrai os mesmos atributos usados no treinamento
+- O modelo `.model` salvo pelo Weka é carregado
+- A imagem é classificada como **“Saudável” ou “Doente”**, com log dos dados
+
+---
 
 ### Avaliação com 10-fold cross-validation
 
@@ -77,18 +90,6 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
 | Saudável  | 85,7%    | 92,8%  | 89,1%    |
 | Doente    | 92,2%    | 84,5%  | 88,2%    |
 
----
-
-## Plugin no ImageJ
-
-O sistema final foi encapsulado em um **plugin Java para ImageJ**:
-
-- O usuário abre uma imagem no ImageJ
-- O plugin extrai os mesmos atributos usados no treinamento
-- O modelo `.model` salvo pelo Weka é carregado
-- A imagem é classificada como **“Saudável” ou “Doente”**, com log dos dados
-
----
 
 ## Limitações
 
