@@ -53,7 +53,7 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
 
 ---
 
-## Treinamento e Validação
+## Base de Treinamento
 
 - Total de imagens: **1862**
   - 519 saudáveis
@@ -75,6 +75,7 @@ O sistema final foi encapsulado em um **plugin Java para ImageJ** que faz os mes
 
 ---
 
+## Avaliação de Desempenho
 ### Avaliação com 10-fold cross-validation
 
 | Métrica       | Resultado |
