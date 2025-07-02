@@ -4,7 +4,7 @@ Este projeto propõe um sistema automatizado de análise de imagens de folhas co
 
 ---
 
-## ⚙️ Tecnologias e Ferramentas
+## Tecnologias e Ferramentas
 
 - 🧪 **ImageJ + Java**: para processamento e extração de atributos das imagens
 - 🧠 **Weka**: para treinamento, validação e aplicação de modelos de aprendizado de máquina
@@ -12,7 +12,7 @@ Este projeto propõe um sistema automatizado de análise de imagens de folhas co
 
 ---
 
-## 📊 Atributos extraídos das imagens
+## Atributos extraídos das imagens
 
 Para cada imagem de folha, foram extraídas três características principais:
 
@@ -29,6 +29,7 @@ Esses atributos foram salvos em um arquivo `.arff` (formato do Weka), sendo a ba
 As imagens foram organizadas em duas pastas:
 
 /imagens/
+
 ├── saudavel/
 ├── doente/
 
@@ -37,11 +38,11 @@ Um plugin Java percorre essas pastas, extrai os atributos e gera o arquivo `folh
 
 ---
 
-## 🔎 Classificador usado
+## Classificador usado
 
 O modelo de aprendizado supervisionado escolhido foi o:
 
-### ✅ Random Forest
+### Random Forest
 
 - Algoritmo robusto contra overfitting
 - Lida bem com atributos contínuos e imagens ruidosas
@@ -52,7 +53,7 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
 
 ---
 
-## 🧪 Treinamento e Validação
+## Treinamento e Validação
 
 - Total de imagens: **1862**
   - 519 saudáveis
@@ -61,7 +62,7 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
   - 931 saudáveis
   - 931 doentes
 
-### 🔁 Avaliação com 10-fold cross-validation
+### Avaliação com 10-fold cross-validation
 
 | Métrica       | Resultado |
 |---------------|-----------|
@@ -70,7 +71,7 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
 | AUC (ROC)     | **0,94**  
 | F1-score médio| **88,6%**
 
-#### 📊 Precisão e Recall por classe:
+#### Precisão e Recall por classe:
 | Classe    | Precisão | Recall | F1-Score |
 |-----------|----------|--------|----------|
 | Saudável  | 85,7%    | 92,8%  | 89,1%    |
@@ -78,7 +79,7 @@ Breiman, L. (2001). *Random forests*. Machine Learning, 45(1), 5–32. https://d
 
 ---
 
-## 🧩 Plugin no ImageJ
+## Plugin no ImageJ
 
 O sistema final foi encapsulado em um **plugin Java para ImageJ**:
 
@@ -89,7 +90,7 @@ O sistema final foi encapsulado em um **plugin Java para ImageJ**:
 
 ---
 
-## ⚠️ Limitações
+## Limitações
 
 - Apenas três atributos foram utilizados (área, mancha e cor média)
 - O modelo é sensível a **iluminação e qualidade das imagens**
@@ -106,7 +107,7 @@ O sistema final foi encapsulado em um **plugin Java para ImageJ**:
 
 ---
 
-## 📎 Links úteis
+## Links úteis
 
 - 🔗 [Base de dados de folhas - Kaggle](https://www.kaggle.com/datasets/csafrit2/plant-leaves-for-imageclassification)
 - 🔗 [Random Forest - Artigo original (Breiman, 2001)](https://doi.org/10.1023/A:1010933404324)
