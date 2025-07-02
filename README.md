@@ -6,9 +6,9 @@ Este projeto propõe um sistema automatizado de análise de imagens de folhas co
 
 ## Tecnologias e Ferramentas
 
-- 🧪 **ImageJ + Java**: para processamento e extração de atributos das imagens
-- 🧠 **Weka**: para treinamento, validação e aplicação de modelos de aprendizado de máquina
-- 📸 **Base de dados**: imagens públicas de folhas (do Kaggle)
+-  **ImageJ + Java**: para processamento e extração de atributos das imagens
+-  **Weka**: para treinamento, validação e aplicação de modelos de aprendizado de máquina
+-  **Base de dados**: imagens públicas de folhas (do Kaggle)
 
 ---
 
@@ -98,7 +98,7 @@ O sistema final foi encapsulado em um **plugin Java para ImageJ**:
 
 ---
 
-## ✅ Pontos fortes
+## Pontos fortes
 
 - Alta acurácia mesmo com atributos simples
 - Plugin funcional, integrado ao ImageJ
@@ -109,10 +109,10 @@ O sistema final foi encapsulado em um **plugin Java para ImageJ**:
 
 ## Links úteis
 
-- 🔗 [Base de dados de folhas - Kaggle](https://www.kaggle.com/datasets/csafrit2/plant-leaves-for-imageclassification)
-- 🔗 [Random Forest - Artigo original (Breiman, 2001)](https://doi.org/10.1023/A:1010933404324)
-- 🔗 [Weka - Ferramenta de aprendizado de máquina](https://www.cs.waikato.ac.nz/ml/weka/)
-- 🔗 [ImageJ - Editor científico de imagens](https://imagej.nih.gov/ij/)
+-  [Base de dados de folhas - Kaggle](https://www.kaggle.com/datasets/csafrit2/plant-leaves-for-imageclassification)
+-  [Random Forest - Artigo original (Breiman, 2001)](https://doi.org/10.1023/A:1010933404324)
+-  [Weka - Ferramenta de aprendizado de máquina](https://www.cs.waikato.ac.nz/ml/weka/)
+-  [ImageJ - Editor científico de imagens](https://imagej.nih.gov/ij/)
 
 ---
 
