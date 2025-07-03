@@ -1,0 +1,19 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Rodar Gerador de ARFF",
+      "request": "launch",
+      "mainClass": "ClassificadorFolhas",
+      "vmArgs": "-cp \".;lib/weka.jar\""
+    },
+    {
+      "type": "java",
+      "name": "Rodar Plugin de Classificação",
+      "request": "launch",
+      "mainClass": "ClassificadorFolhasPlugin",
+      "vmArgs": "-cp \".;lib/weka.jar;lib/ij.jar\""
+    }
+  ]
+}
